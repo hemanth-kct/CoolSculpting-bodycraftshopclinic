@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CoolSculpting | Bodycraft Clinic</title>
+  <meta name="description" content="CoolSculpting at Bodycraft Clinic — freeze fat cells, contour your shape, long-lasting results. FDA-approved, dermatologist supervised." />
+  <meta name="author" content="Bodycraft Clinic" />
+  <link rel="icon" href="../favicon.png" />
+
+  <meta property="og:title" content="CoolSculpting | Bodycraft Clinic" />
+  <meta property="og:description" content="Freeze Fat Cells • Contour Your Shape • Long-Lasting Results" />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            background: 'hsl(var(--background))',
+            foreground: 'hsl(var(--foreground))',
+            card: 'hsl(var(--card))',
+            'card-foreground': 'hsl(var(--card-foreground))',
+            primary: 'hsl(var(--primary))',
+            'primary-foreground': 'hsl(var(--primary-foreground))',
+            secondary: 'hsl(var(--secondary))',
+            'secondary-foreground': 'hsl(var(--secondary-foreground))',
+            muted: 'hsl(var(--muted))',
+            'muted-foreground': 'hsl(var(--muted-foreground))',
+            border: 'hsl(var(--border))',
+            'dark-surface': 'hsl(var(--dark-surface))',
+            'dark-surface-foreground': 'hsl(var(--dark-surface-foreground))',
+          },
+          fontFamily: {
+            sans: ['Roboto', 'system-ui', 'sans-serif'],
+            serif: ['Roboto', 'system-ui', 'sans-serif'],
+          },
+          boxShadow: {
+            gold: '0 4px 30px hsla(8.91, 60%, 67%, 0.25)',
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    :root {
+      --background: 30 20% 97%;
+      --foreground: 30 10% 12%;
+      --card: 30 25% 95%;
+      --card-foreground: 30 10% 12%;
+      --primary: 8.91 60.48% 67.25%;
+      --primary-foreground: 30 20% 97%;
+      --secondary: 30 15% 90%;
+      --secondary-foreground: 30 10% 20%;
+      --muted: 30 10% 92%;
+      --muted-foreground: 30 8% 50%;
+      --border: 30 15% 88%;
+      --dark-surface: 30 10% 8%;
+      --dark-surface-foreground: 30 20% 92%;
+    }
+
+    body { font-family: 'Roboto', system-ui, sans-serif; }
+
+    .hero-blob {
+      position: absolute;
+      border-radius: 9999px;
+      filter: blur(70px);
+      opacity: 0.35;
+      background: hsl(8.91 60.48% 67.25%);
+    }
+
+    details > summary { list-style: none; cursor: pointer; }
+    details > summary::-webkit-details-marker { display: none; }
+    details[open] summary .chev { transform: rotate(180deg); }
+    details summary .chev { transition: transform 200ms ease; }
+    details[open] { border-color: hsla(8.91, 60%, 67%, 0.3); box-shadow: var(--shadow-gold); }
+  </style>
+</head>
+
+<body class="bg-background text-foreground">
+  <main class="min-h-screen">
+
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-dark-surface/95 backdrop-blur-md border-b border-primary/10">
+      <div class="max-w-6xl mx-auto flex items-center justify-between px-4 py-3">
+        <span class="inline-flex items-center">
+          <img src="../bodycraft-clinic-logo.png" alt="Bodycraft Clinic" height="60" width="166" class="h-10 w-auto md:h-[60px]">
+        </span>
+        <a href="#book" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-primary text-primary-foreground font-semibold text-sm shadow-gold hover:scale-105 transition-transform duration-300">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          Book Now
+        </a>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="relative min-h-[85vh] flex flex-col pt-16 overflow-hidden bg-dark-surface">
+      <picture>
+        <source media="(min-width: 768px)" srcset="assets/coolsculpting-hero.jpg">
+        <img src="assets/coolsculpting-hero-mobile.jpg" alt="CoolSculpting fat-freezing treatment being performed on a patient at Bodycraft Clinic" class="absolute inset-0 w-full h-full object-cover" loading="eager" />
+      </picture>
+      <div class="absolute inset-0 bg-gradient-to-b from-dark-surface/90 via-dark-surface/70 to-dark-surface/95"></div>
+
+      <div class="relative z-10 flex-1 flex flex-col justify-center items-center text-center px-4 py-16">
+        <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-dark-surface-foreground leading-tight max-w-4xl mb-4">CoolSculpting</h1>
+        <p class="text-primary text-lg md:text-xl font-semibold tracking-wide mb-6">Freeze Fat Cells • Contour Your Shape • Long-Lasting Results</p>
+
+        <div class="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-primary/15 border border-primary/40 text-primary font-bold text-base md:text-lg mb-8">
+          Up to 50% off on CoolSculpting
+        </div>
+
+        <a href="#book" class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-primary text-primary-foreground font-semibold text-lg shadow-gold hover:scale-105 transition-transform duration-300 mb-10">
+          Book Free Consultation
+        </a>
+
+        <div class="flex flex-wrap justify-center gap-4 md:gap-6">
+          <div class="flex items-center gap-2 px-4 py-2 rounded-full border border-primary/20 bg-dark-surface/60 backdrop-blur-sm">
+            <span class="text-primary"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path><path d="m9 12 2 2 4-4"></path></svg></span>
+            <span class="text-dark-surface-foreground/80 text-sm">FDA-approved technology</span>
+          </div>
+          <div class="flex items-center gap-2 px-4 py-2 rounded-full border border-primary/20 bg-dark-surface/60 backdrop-blur-sm">
+            <span class="text-primary"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><polyline points="16 11 18 13 22 9"></polyline></svg></span>
+            <span class="text-dark-surface-foreground/80 text-sm">Certified and experienced practitioners</span>
+          </div>
+          <div class="flex items-center gap-2 px-4 py-2 rounded-full border border-primary/20 bg-dark-surface/60 backdrop-blur-sm">
+            <span class="text-primary"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path></svg></span>
+            <span class="text-dark-surface-foreground/80 text-sm">Non-surgical fat loss</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why CoolSculpting -->
+    <section class="py-20 px-4 bg-background">
+      <div class="max-w-5xl mx-auto">
+        <div class="text-center mb-14">
+          <span class="text-sm font-medium tracking-widest uppercase text-primary">Why CoolSculpting?</span>
+          <h2 class="text-3xl md:text-5xl font-bold text-foreground mt-3">Why Choose CoolSculpting at Bodycraft</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+          <div class="text-center p-8 rounded-2xl bg-card border border-border hover:border-primary/30 hover:shadow-gold transition-all duration-300">
+            <div class="w-16 h-16 mx-auto mb-5 rounded-full border-2 border-primary/30 bg-primary/5 flex items-center justify-center text-primary">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-7 h-7"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"></path></svg>
+            </div>
+            <h3 class="text-lg font-semibold text-foreground mb-2">Targets Stubborn Fat</h3>
+            <p class="text-muted-foreground text-sm">Advanced fat-freezing technology reduces stubborn fat pockets that resist diet and exercise.</p>
+          </div>
+
+          <div class="text-center p-8 rounded-2xl bg-card border border-border hover:border-primary/30 hover:shadow-gold transition-all duration-300">
+            <div class="w-16 h-16 mx-auto mb-5 rounded-full border-2 border-primary/30 bg-primary/5 flex items-center justify-center text-primary">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-7 h-7"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"></path></svg>
+            </div>
+            <h3 class="text-lg font-semibold text-foreground mb-2">Non-Surgical Body Contouring</h3>
+            <p class="text-muted-foreground text-sm">Achieve a more sculpted appearance without surgery, needles, or downtime.</p>
+          </div>
+
+          <div class="text-center p-8 rounded-2xl bg-card border border-border hover:border-primary/30 hover:shadow-gold transition-all duration-300">
+            <div class="w-16 h-16 mx-auto mb-5 rounded-full border-2 border-primary/30 bg-primary/5 flex items-center justify-center text-primary">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-7 h-7"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path><path d="m9 12 2 2 4-4"></path></svg>
+            </div>
+            <h3 class="text-lg font-semibold text-foreground mb-2">Safe & Dermatologist-Supervised</h3>
+            <p class="text-muted-foreground text-sm">Every treatment is performed using FDA-cleared technology under the supervision of certified doctors.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- The Process -->
+    <section class="py-20 px-4 bg-dark-surface">
+      <div class="max-w-5xl mx-auto">
+        <div class="text-center mb-14">
+          <span class="text-sm font-medium tracking-widest uppercase text-primary">The Process</span>
+          <h2 class="text-3xl md:text-5xl font-bold text-dark-surface-foreground mt-3">How CoolSculpting Works</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+          <div class="relative p-6 rounded-2xl bg-primary/5 border border-white/20 text-center group hover:bg-primary/10 transition-all duration-300">
+            <div class="w-16 h-16 mx-auto mb-4 rounded-full border-2 border-primary/30 bg-dark-surface flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-primary-foreground group-hover:border-primary transition-all duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-7 h-7"><rect width="8" height="4" x="8" y="2" rx="1" ry="1"></rect><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><path d="m9 14 2 2 4-4"></path></svg>
+            </div>
+            <span class="text-xs font-bold tracking-widest uppercase text-primary/50 mb-2 block">Step 01</span>
+            <h3 class="text-lg font-semibold text-dark-surface-foreground mb-2">Consultation & Body Assessment</h3>
+            <p class="text-dark-surface-foreground/60 text-sm leading-relaxed">Our dermatologist assesses your treatment areas, body goals, and determines if CoolSculpting is right for you.</p>
+          </div>
+
+          <div class="relative p-6 rounded-2xl bg-primary/5 border border-white/20 text-center group hover:bg-primary/10 transition-all duration-300">
+            <div class="w-16 h-16 mx-auto mb-4 rounded-full border-2 border-primary/30 bg-dark-surface flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-primary-foreground group-hover:border-primary transition-all duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-7 h-7"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path></svg>
+            </div>
+            <span class="text-xs font-bold tracking-widest uppercase text-primary/50 mb-2 block">Step 02</span>
+            <h3 class="text-lg font-semibold text-dark-surface-foreground mb-2">Targeted Fat Freezing Treatment</h3>
+            <p class="text-dark-surface-foreground/60 text-sm leading-relaxed">FDA-cleared cooling technology precisely freezes stubborn fat cells without damaging surrounding tissue.</p>
+          </div>
+
+          <div class="relative p-6 rounded-2xl bg-primary/5 border border-white/20 text-center group hover:bg-primary/10 transition-all duration-300">
+            <div class="w-16 h-16 mx-auto mb-4 rounded-full border-2 border-primary/30 bg-dark-surface flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-primary-foreground group-hover:border-primary transition-all duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-7 h-7"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline><polyline points="16 7 22 7 22 13"></polyline></svg>
+            </div>
+            <span class="text-xs font-bold tracking-widest uppercase text-primary/50 mb-2 block">Step 03</span>
+            <h3 class="text-lg font-semibold text-dark-surface-foreground mb-2">Natural Fat Elimination & Body Contouring</h3>
+            <p class="text-dark-surface-foreground/60 text-sm leading-relaxed">Your body gradually eliminates the treated fat cells over the following weeks, revealing a slimmer, more sculpted appearance.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-20 px-4 bg-background">
+      <div class="max-w-3xl mx-auto">
+        <div class="text-center mb-14">
+          <span class="text-sm font-medium tracking-widest uppercase text-primary">FAQs</span>
+          <h2 class="text-3xl md:text-5xl font-bold text-foreground mt-3">Frequently Asked Questions</h2>
+        </div>
+        <div class="space-y-3">
+
+          <details class="border border-border rounded-xl px-5 bg-card transition-all duration-300">
+            <summary class="flex flex-1 items-center justify-between text-base font-semibold text-foreground py-5">
+              Is CoolSculpting painful?
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="chev h-4 w-4 shrink-0"><path d="m6 9 6 6 6-6"></path></svg>
+            </summary>
+            <p class="text-muted-foreground text-sm pb-5">Most people experience a cooling sensation and mild pressure at the beginning of the treatment, which usually subsides within a few minutes.</p>
+          </details>
+
+          <details class="border border-border rounded-xl px-5 bg-card transition-all duration-300">
+            <summary class="flex flex-1 items-center justify-between text-base font-semibold text-foreground py-5">
+              How many CoolSculpting sessions will I need?
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="chev h-4 w-4 shrink-0"><path d="m6 9 6 6 6-6"></path></svg>
+            </summary>
+            <p class="text-muted-foreground text-sm pb-5">The number of sessions depends on your body goals and the treatment area. Your dermatologist will recommend a personalised treatment plan during your consultation.</p>
+          </details>
+
+          <details class="border border-border rounded-xl px-5 bg-card transition-all duration-300">
+            <summary class="flex flex-1 items-center justify-between text-base font-semibold text-foreground py-5">
+              When will I see the results?
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="chev h-4 w-4 shrink-0"><path d="m6 9 6 6 6-6"></path></svg>
+            </summary>
+            <p class="text-muted-foreground text-sm pb-5">Results gradually become visible over the weeks following treatment as your body naturally eliminates the treated fat cells, with full results typically seen within 2–3 months.</p>
+          </details>
+
+          <details class="border border-border rounded-xl px-5 bg-card transition-all duration-300">
+            <summary class="flex flex-1 items-center justify-between text-base font-semibold text-foreground py-5">
+              Who is a good candidate for CoolSculpting?
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="chev h-4 w-4 shrink-0"><path d="m6 9 6 6 6-6"></path></svg>
+            </summary>
+            <p class="text-muted-foreground text-sm pb-5">CoolSculpting is ideal for adults with stubborn fat pockets that don't respond to diet and exercise. It is not a weight-loss treatment.</p>
+          </details>
+
+          <details class="border border-border rounded-xl px-5 bg-card transition-all duration-300">
+            <summary class="flex flex-1 items-center justify-between text-base font-semibold text-foreground py-5">
+              Can both men & women undergo CoolSculpting?
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="chev h-4 w-4 shrink-0"><path d="m6 9 6 6 6-6"></path></svg>
+            </summary>
+            <p class="text-muted-foreground text-sm pb-5">Yes, CoolSculpting is safe and effective for both men and women looking to reduce stubborn fat and improve body contours.</p>
+          </details>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Before and After -->
+    <section class="py-20 px-4 bg-dark-surface">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-14">
+          <span class="text-sm font-medium tracking-widest uppercase text-primary">Before and After</span>
+          <h2 class="text-3xl md:text-5xl font-bold text-dark-surface-foreground mt-3">Real People Real Results</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+
+          <div class="rounded-2xl overflow-hidden border border-white/10 bg-primary/5">
+            <img src="assets/coolsculpting-before-after-1.jpg" alt="Before and after photos of a patient's abdomen following 2 cycles of CoolSculpting, 2 months post treatment" class="w-full h-auto block" loading="lazy" />
+          </div>
+
+          <div class="rounded-2xl overflow-hidden border border-white/10 bg-primary/5">
+            <img src="assets/coolsculpting-before-after-2.jpg" alt="Before and after photos of a patient's back and flanks following 5 cycles of CoolSculpting" class="w-full h-auto block" loading="lazy" />
+          </div>
+
+        </div>
+        <p class="text-center text-dark-surface-foreground/40 text-xs mt-6">* Individual results vary.</p>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="py-20 px-4 bg-background">
+      <div class="max-w-5xl mx-auto">
+        <div class="text-center mb-14">
+          <span class="text-sm font-medium tracking-widest uppercase text-primary">Pricing</span>
+          <h2 class="text-3xl md:text-5xl font-bold text-foreground mt-3">CoolSculpting Packages</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+          <div class="text-center p-8 rounded-2xl bg-card border border-border hover:border-primary/30 hover:shadow-gold transition-all duration-300 flex flex-col">
+            <h3 class="text-lg font-semibold text-foreground mb-4">Cool Mini</h3>
+            <p class="text-muted-foreground text-base line-through">₹44,000</p>
+            <p class="text-primary text-3xl font-bold mb-6">₹21,999</p>
+            <a href="#book" class="mt-auto inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-primary text-primary-foreground font-semibold text-sm shadow-gold hover:scale-105 transition-transform duration-300">Book Now</a>
+          </div>
+
+          <div class="text-center p-8 rounded-2xl bg-card border-2 border-primary/40 shadow-gold transition-all duration-300 flex flex-col relative">
+            <span class="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full bg-primary text-primary-foreground text-xs font-bold tracking-wide uppercase">Most Popular</span>
+            <h3 class="text-lg font-semibold text-foreground mb-4 mt-2">Cool Advantage <span class="block text-sm font-normal text-muted-foreground">(up to 5 cycles)</span></h3>
+            <p class="text-muted-foreground text-base line-through">₹44,000</p>
+            <p class="text-primary text-3xl font-bold mb-6">₹28,500</p>
+            <a href="#book" class="mt-auto inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-primary text-primary-foreground font-semibold text-sm shadow-gold hover:scale-105 transition-transform duration-300">Book Now</a>
+          </div>
+
+          <div class="text-center p-8 rounded-2xl bg-card border border-border hover:border-primary/30 hover:shadow-gold transition-all duration-300 flex flex-col">
+            <h3 class="text-lg font-semibold text-foreground mb-4">Cool Advantage <span class="block text-sm font-normal text-muted-foreground">(5+ cycles)</span></h3>
+            <p class="text-muted-foreground text-base line-through">₹44,000</p>
+            <p class="text-primary text-3xl font-bold mb-6">₹26,500</p>
+            <a href="#book" class="mt-auto inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-primary text-primary-foreground font-semibold text-sm shadow-gold hover:scale-105 transition-transform duration-300">Book Now</a>
+          </div>
+
+        </div>
+        <p class="text-center text-muted-foreground text-xs mt-8">* Price shown per cycle. Final treatment plan and pricing confirmed after your consultation.</p>
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="py-20 px-4 bg-dark-surface">
+      <div class="max-w-3xl mx-auto text-center">
+        <h2 class="text-3xl md:text-5xl font-bold text-dark-surface-foreground mb-6">Ready to Contour Your Shape?</h2>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center mb-6">
+          <a href="#book" class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-primary text-primary-foreground font-bold text-base shadow-gold hover:scale-105 transition-transform duration-300">Book Free Consultation</a>
+        </div>
+        <a href="tel:08037610083" class="inline-flex items-center gap-2 text-primary font-semibold hover:underline">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          Prefer a call? CALL NOW
+        </a>
+      </div>
+    </section>
+
+    <!-- Lead form -->
+    <section id="book" class="py-20 px-4 bg-background scroll-mt-16">
+      <div class="max-w-xl mx-auto">
+        <div class="text-center mb-10">
+          <span class="text-sm font-medium tracking-widest uppercase text-primary">Talk to Our Experts</span>
+          <h2 class="text-2xl md:text-4xl font-bold text-foreground mt-3">Get a free consultation today</h2>
+        </div>
+        <form class="space-y-4 bg-card border border-border rounded-2xl p-6 md:p-8" onsubmit="event.preventDefault(); this.reset(); document.getElementById('form-success').classList.remove('hidden');">
+          <div>
+            <label class="block text-sm font-medium text-foreground mb-1">Name *</label>
+            <input required type="text" class="w-full px-4 py-2.5 rounded-lg border border-border bg-background focus:outline-none focus:ring-2 focus:ring-primary/40" />
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-foreground mb-1">Mobile *</label>
+            <input required type="tel" pattern="[0-9]{10}" class="w-full px-4 py-2.5 rounded-lg border border-border bg-background focus:outline-none focus:ring-2 focus:ring-primary/40" />
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-foreground mb-1">City *</label>
+            <select required class="w-full px-4 py-2.5 rounded-lg border border-border bg-background focus:outline-none focus:ring-2 focus:ring-primary/40">
+              <option value="">Select City</option>
+              <option>Bangalore</option>
+              <option>Gurgaon</option>
+              <option>Dehradun</option>
+              <option>Chennai</option>
+              <option>Mumbai</option>
+              <option>Mysore</option>
+              <option>Lucknow</option>
+              <option>Kanpur</option>
+              <option>Hyderabad</option>
+              <option>Vellore</option>
+              <option>Dwarka</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-foreground mb-1">Treatment Area</label>
+            <select class="w-full px-4 py-2.5 rounded-lg border border-border bg-background focus:outline-none focus:ring-2 focus:ring-primary/40">
+              <option value="">Select Treatment Area</option>
+              <option>Abdomen</option>
+              <option>Flanks / Love Handles</option>
+              <option>Thighs</option>
+              <option>Double Chin</option>
+              <option>Arms</option>
+              <option>Back</option>
+            </select>
+          </div>
+          <button type="submit" class="w-full py-4 rounded-xl bg-primary text-primary-foreground font-bold text-base shadow-gold hover:scale-[1.02] active:scale-[0.98] transition-transform duration-200">Submit</button>
+          <p id="form-success" class="hidden text-center text-sm text-primary font-medium">Thanks! Our team will contact you shortly.</p>
+        </form>
+      </div>
+    </section>
+
+    <!-- Locations -->
+    <section class="py-10 px-4 bg-dark-surface border-t border-white/10 pb-28 md:pb-24">
+      <div class="max-w-4xl mx-auto text-center">
+        <span class="text-xs font-semibold tracking-widest uppercase text-primary/70">Our Locations</span>
+        <p class="text-dark-surface-foreground/60 text-sm mt-2">Bangalore, Gurgaon, Dehradun, Chennai, Mumbai, Mysore, Lucknow, Kanpur, Hyderabad, Vellore, Dwarka</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Floating CTA bar -->
+  <div class="fixed w-full bottom-0 md:bottom-2 left-0 right-0 z-50 justify-between items-center md:px-4 md:py-3 hidden md:flex">
+    <a href="tel:08037610083" class="inline-flex items-center gap-2 md:rounded-full bg-dark-surface px-5 py-3 font-semibold text-sm text-dark-surface-foreground shadow-lg border border-primary/20 hover:bg-primary transition-colors group">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 text-primary group-hover:text-white"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+      CALL NOW
+    </a>
+    <a href="#book" class="inline-flex items-center gap-2 md:rounded-full bg-primary px-5 py-3 font-semibold text-sm text-primary-foreground shadow-lg hover:bg-dark-surface transition-colors">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path></svg>
+      ENQUIRE NOW
+    </a>
+  </div>
+  <div class="fixed bottom-0 left-0 right-0 z-50 grid grid-cols-2 md:hidden">
+    <a href="tel:08037610083" class="inline-flex items-center justify-center gap-2 bg-dark-surface px-5 py-3 font-semibold text-sm text-dark-surface-foreground shadow-lg border border-primary/20 group">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 text-primary group-hover:text-white"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+      CALL NOW
+    </a>
+    <a href="#book" class="inline-flex items-center justify-center gap-2 bg-primary px-5 py-3 font-semibold text-sm text-primary-foreground shadow-lg">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path></svg>
+      ENQUIRE NOW
+    </a>
+  </div>
+
+</body>
+</html>
